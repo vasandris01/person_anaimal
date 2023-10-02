@@ -1,2 +1,17 @@
-package com.example.person_anaimal.model;public class Animal {
+package com.example.person_anaimal.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Animal {
+    @Id
+    private Integer id;
+    private String name;
 }
